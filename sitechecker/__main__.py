@@ -6,7 +6,7 @@ from sitechecker.cli import display_check_result
 from sitechecker.checker import site_is_online
 
 def main():
-    """Run Site Checker."""
+    """Roda a aplicação"""
     user_args = read_user_cli_args()
     urls = user_args.urls
     if not urls:
