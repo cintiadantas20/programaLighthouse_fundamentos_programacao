@@ -1,7 +1,7 @@
 import argparse
 
 def read_user_cli_args():
-    """Handle the CLI arguments and options."""
+    """Trata argumntos e opções do CLI"""
     parser = argparse.ArgumentParser(
         prog="sitechecker", description="Teste a disponibilidade de uma URL"
     )
@@ -17,7 +17,7 @@ def read_user_cli_args():
     return parser.parse_args()
 
 def display_check_result(result, url, error=""):
-    """Display the result of a connectivity check."""
+    """Mostra o status do site"""
     print(f'O status da "{url}" é:', end=" ")
     if result:
         print('"Online!" 👍')
