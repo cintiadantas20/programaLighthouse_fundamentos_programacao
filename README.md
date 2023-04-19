@@ -10,5 +10,5 @@ Para rodar a aplicação, após clonar o repositório, é necessário:
 * Criar um ambiente virtual na pasta clonada, com o comando: python -m venv venv
 * Ativar o ambiente virtual com o comando: venv\Scripts\activate
 * Instalar as bibliotecas descritas no arquivo requirements.txt
-* Abrir a linha de comando e executar o seguinte comando: python -m sitechecker -u "sites desejados"<br/>
+* Abrir a linha de comando, ir até a pasta do projeto e executar o seguinte comando: python -m sitechecker -u "sites desejados"<br/>
     Ex: python -m sitechecker -u python.org google.com indicium.tech
