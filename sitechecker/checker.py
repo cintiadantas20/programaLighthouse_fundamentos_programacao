@@ -2,16 +2,13 @@ from http.client import HTTPConnection
 from urllib.parse import urlparse
 
 def site_is_online(url, timeout=2):
-    """Return True if the target URL is online.
-
-    Raise an exception otherwise.
-    """
-    # Defines a generic Exception as placeholder
+    """Retorna True se a URL está online e uma exceção, se não estiver"""
+    # Define a exceção
     error = Exception("Ops, algo errado.")
-    # Parses URL and finds host
+    # Interpreta uma URL e retorna os seus componentes
     parser = urlparse(url)
     host = parser.netloc or parser.path.split("/")[0]
-    # Starts a for loop using HTTP and HTTPs ports
+    # Cria um for loop para consultar as portas HTTP e HTTPs
     for port in (80, 443):
         connection = HTTPConnection(host=host, port=port, timeout=timeout)
         try:
